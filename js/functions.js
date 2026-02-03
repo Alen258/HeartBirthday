@@ -86,8 +86,9 @@ function startHeartAnimation() {
 })(jQuery);
 
 function timeElapse(c) {
+	var together = new Date(2006, 1, 21, 0, 0, 0);
 	var e = Date();
-	var f = (Date.parse(e) - Date.parse(c)) / 1000;
+	var f = (Date.parse(e) - Date.parse(together)) / 1000;
 	var g = Math.floor(f / (3600 * 24));
 	f = f % (3600 * 24);
 	var b = Math.floor(f / 3600);
